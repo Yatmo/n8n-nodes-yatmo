@@ -1,0 +1,21 @@
+{
+	"node": "n8n-nodes-yatmo.yatmo",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Data & Storage",
+		"Marketing"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://documentation.yatmo.com/license"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/Yatmo/n8n-nodes-yatmo#readme"
+			}
+		]
+	}
+}

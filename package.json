@@ -1,0 +1,63 @@
+{
+	"name": "n8n-nodes-yatmo",
+	"version": "1.0.0",
+	"description": "Real estate neighbourhood data in n8n workflows: nearest places with travel times, neighbourhood text as HTML, listing enrichment, scores, geocoding, isochrones, routes and static maps from Yatmo. The official Yatmo community node.",
+	"license": "MIT",
+	"homepage": "https://documentation.yatmo.com/api",
+	"keywords": [
+		"n8n-community-node-package",
+		"yatmo",
+		"real-estate",
+		"proptech",
+		"map",
+		"points-of-interest",
+		"neighbourhood",
+		"geocoding",
+		"isochrone",
+		"seo"
+	],
+	"author": {
+		"name": "Yatmo",
+		"email": "support@yatmo.com",
+		"url": "https://yatmo.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Yatmo/n8n-nodes-yatmo.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/YatmoApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Yatmo/Yatmo.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^19.0.4",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	},
+	"bugs": {
+		"url": "https://github.com/Yatmo/n8n-nodes-yatmo/issues"
+	}
+}
